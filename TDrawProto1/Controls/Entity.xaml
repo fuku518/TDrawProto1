@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:TDrawProto1.Controls"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
+             d:DesignHeight="300" d:DesignWidth="300" SnapsToDevicePixels="True">
     <Grid Background="#FFF0DD">
         <Grid.RowDefinitions>
             <RowDefinition MinHeight="40"/>
@@ -22,10 +22,9 @@
             </Grid.ColumnDefinitions>
             <TextBox Grid.Column="0" AcceptsReturn="True" Background="MediumAquamarine" BorderThickness="0"/>
             <TextBox Grid.Column="1" AcceptsReturn="True" Background="GreenYellow" BorderThickness="0"/>
-            <Border Grid.Row="1" Grid.Column="0" BorderThickness="2" BorderBrush="Black" Background="Transparent"/>
-            <Border Grid.Row="1" Grid.Column="1" BorderThickness="2" BorderBrush="Black" Background="Transparent"/>
+            <Border Grid.Row="1" Grid.Column="0" BorderThickness="0, 0, 1, 0" BorderBrush="Black" Background="Transparent"/>
         </Grid>
-        <Border Grid.RowSpan="2" BorderThickness="3" BorderBrush="Black"/>
-        <Border Grid.RowSpan="1" BorderThickness="3" BorderBrush="Black"/>
+        <Border Grid.RowSpan="2" BorderThickness="1" BorderBrush="Black"/>
+        <Border Grid.RowSpan="1" BorderThickness="0, 0, 0, 1" BorderBrush="Black"/>
     </Grid>
 </UserControl>
