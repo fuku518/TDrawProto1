@@ -63,9 +63,10 @@ namespace TDrawProto1
                     ScaleY = lastScale
                 };
                 ent.RenderTransform = scaleTrans;
+                var local = doc.Transform.WorldToLocal(ei.X, ei.Y);
 
-                Canvas.SetLeft(ent, ei.X);
-                Canvas.SetTop(ent, ei.Y);
+                Canvas.SetLeft(ent, local.X);
+                Canvas.SetTop(ent, local.Y);
             }
 
         }

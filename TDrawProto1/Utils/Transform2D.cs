@@ -13,11 +13,19 @@ namespace TDrawProto1.Utils
 
         public float Scale { get; set; } = 1.0F;
 
-        PointF WorldToLocal(PointF world)
+        public PointF WorldToLocal(float x, float y)
+        {
+            return WorldToLocal(new PointF(x, y));
+        }
+        public PointF WorldToLocal(PointF world)
         {
             return new PointF(world.X * Scale, world.Y * Scale);
         }
-        PointF LocalToWorld(PointF world)
+        public PointF LocalToWorld(float x, float y)
+        {
+            return LocalToWorld(new PointF(x, y));
+        }
+        public PointF LocalToWorld(PointF world)
         {
             return new PointF(world.X / Scale, world.Y / Scale);
         }
