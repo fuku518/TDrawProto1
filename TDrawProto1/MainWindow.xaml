@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:TDrawProto1"
         xmlns:cotnrol="clr-namespace:TDrawProto1.Controls"
         mc:Ignorable="d"
-        Title="枠線ありの全部自前版 v0.0.0.2" Height="350" Width="525">
+        Title="全部自前版" Height="350" Width="525">
     <Grid>
         <TextBlock HorizontalAlignment="Center" Margin="0, 50" Text="エンティティ名、タイプ、右・左を直接編集できます。"/>
         <cotnrol:Entity Width="150" Height="150" />
