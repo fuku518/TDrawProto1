@@ -6,9 +6,11 @@
         xmlns:local="clr-namespace:TDrawProto1"
         xmlns:cotnrol="clr-namespace:TDrawProto1.Controls"
         mc:Ignorable="d"
-        Title="全部自前版" Height="350" Width="525">
-    <Grid Background="White" MouseWheel="OnMouseWheel">
+        Title="全部自前版" Height="350" Width="525" Background="White" PreviewMouseWheel="OnPreviewMouseWheel">
+    <Grid>
         <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top"  Margin="0, 10" Text="エンティティ名、タイプ、右・左を直接編集できます。"/>
-        <Canvas x:Name="canvas"/>
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            <Canvas x:Name="canvas" Width="8000" Height="8000"/>
+        </ScrollViewer>
     </Grid>
 </Window>

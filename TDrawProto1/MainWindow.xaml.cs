@@ -105,25 +105,26 @@ namespace TDrawProto1
         private void Initialize()
         {
             var rnd = new Random();
-            for (var i = 0; i < 10; i++)
+            for (var i = 0; i < 200; i++)
             {
                 var ent = new EntityInfo
                 {
                     Name = "商品",
                     EntityType = "R",
-                    X = rnd.Next() % 800,
-                    Y = rnd.Next() % 400,
+                    X = rnd.Next() % 1800,
+                    Y = rnd.Next() % 1400,
                     Left = "商品コード",
                     Right = "商品名称" + Environment.NewLine + "商品価格",
-                    Height = 100,
-                    Width = 100,
+                    Width = 180,
+                    Height = 160,
                 };
                 doc.Entities.Add(ent);
             }
         }
 
-        private void OnMouseWheel(object sender, MouseWheelEventArgs e)
+        private void OnPreviewMouseWheel(object sender, MouseWheelEventArgs e)
         {
+            e.Handled = true;
             var scale = doc.Transform.Scale;
             scale += (e.Delta / 1000.0F);
             scale = Math.Min(scale, 10.0F);

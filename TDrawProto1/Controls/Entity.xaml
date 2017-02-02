@@ -21,20 +21,20 @@
         <!--エンティティ本体-->
         <Grid Background="#FEFEFE">
             <Grid.RowDefinitions>
-                <RowDefinition MinHeight="40"/>
+                <RowDefinition MinHeight="30" Height="Auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <Grid Grid.Row="0">
                 <TextBox VerticalAlignment="Center" HorizontalAlignment="Center" Background="Transparent" Text="{Binding EntityName, Mode=TwoWay}" BorderThickness="0"/>
-                <TextBox VerticalAlignment="Center" HorizontalAlignment="Right" Background="Transparent" Text="{Binding TypeName}" BorderThickness="0"/>
+                <TextBox VerticalAlignment="Center" HorizontalAlignment="Right" Background="Transparent" Text="{Binding TypeName}" BorderThickness="0" Padding="2"/>
             </Grid>
             <Grid Grid.Row="1">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <TextBox Grid.Column="0" AcceptsReturn="True" BorderThickness="0" Text="{Binding Left}"/>
-                <TextBox Grid.Column="1" AcceptsReturn="True" BorderThickness="0" Text="{Binding Right}"/>
+                <TextBox Grid.Column="0" AcceptsReturn="True" BorderThickness="0" Text="{Binding Left}" Padding="2"/>
+                <TextBox Grid.Column="1" AcceptsReturn="True" BorderThickness="0" Text="{Binding Right}" Padding="2"/>
                 <Border Grid.Row="1" Grid.Column="0" BorderThickness="0, 0, 1, 0" BorderBrush="Black" Background="Transparent"/>
             </Grid>
             <Border Grid.RowSpan="2" BorderThickness="1" BorderBrush="Black"/>
