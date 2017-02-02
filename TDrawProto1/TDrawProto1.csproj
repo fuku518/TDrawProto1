@@ -55,6 +55,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Models\Document.cs" />
+    <Compile Include="Models\EntityInfo.cs" />
+    <Compile Include="Utils\PointF.cs" />
+    <Compile Include="Utils\Transform2D.cs" />
     <Page Include="Controls\Entity.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         Title="全部自前版" Height="350" Width="525">
     <Grid>
-        <TextBlock HorizontalAlignment="Center" Margin="0, 50" Text="エンティティ名、タイプ、右・左を直接編集できます。"/>
-        <cotnrol:Entity Width="150" Height="150" />
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top"  Margin="0, 10" Text="エンティティ名、タイプ、右・左を直接編集できます。"/>
+        <Canvas x:Name="canvas"/>
     </Grid>
 </Window>

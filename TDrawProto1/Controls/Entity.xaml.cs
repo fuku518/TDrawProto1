@@ -20,9 +20,46 @@ namespace TDrawProto1.Controls
     /// </summary>
     public partial class Entity : UserControl
     {
+        public String EntityName
+        {
+            get { return (String)GetValue(EntityNameProperty); }
+            set { SetValue(EntityNameProperty, value); }
+        }
+
+        public static readonly DependencyProperty EntityNameProperty =
+            DependencyProperty.Register(nameof(EntityName), typeof(String), typeof(Entity), new PropertyMetadata(null));
+
+        public String Left
+        {
+            get { return (String)GetValue(LeftProperty); }
+            set { SetValue(LeftProperty, value); }
+        }
+
+        public static readonly DependencyProperty LeftProperty =
+            DependencyProperty.Register(nameof(Left), typeof(String), typeof(Entity), new PropertyMetadata(null));
+
+        public String Right
+        {
+            get { return (String)GetValue(RightProperty); }
+            set { SetValue(RightProperty, value); }
+        }
+
+        public static readonly DependencyProperty RightProperty =
+            DependencyProperty.Register(nameof(Right), typeof(String), typeof(Entity), new PropertyMetadata(null));
+
+        public String TypeName
+        {
+            get { return (String)GetValue(TypeNameProperty); }
+            set { SetValue(TypeNameProperty, value); }
+        }
+
+        public static readonly DependencyProperty TypeNameProperty =
+            DependencyProperty.Register(nameof(TypeName), typeof(String), typeof(Entity), new PropertyMetadata(null));
+
         public Entity()
         {
             InitializeComponent();
+            DataContext = this;
         }
     }
 }
